@@ -1,0 +1,101 @@
+body {
+            font-family: Arial, sans-serif; /* Cambia la fuente de todo el cuerpo */
+            background-color: #24b11f; /* Cambia el color de fondo */
+            color: #333; /* Cambia el color del texto general */
+            margin: 20px; /* Añade un margen alrededor del cuerpo */
+        }
+
+        
+    #titulo-principal {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: underline;
+        font-size: 48px;
+        color: #ffffff; /* Un color azul oscuro para el encabezado principal */
+        text-align: center; /* Centra el texto */
+        border-radius: 10px ;
+    }
+
+        h2 {
+            color: #000000; /* Un azul más claro para el subtítulo */
+            border: 1px solid rgb(19, 26, 18) ;
+            text-align: center;
+        }
+        .h3{
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 5px ;
+            border-color: rgb(255, 255, 255);
+        }
+
+        p {
+            line-height: 1.6; /* Aumenta el espacio entre líneas para mejor lectura */
+            margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+            color: rgb(13, 13, 14);
+        }
+
+        .parrafo-introduccion   {
+
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border-left: 4px solid rgb(31, 235, 12);
+            border-radius: 8px;
+        }
+
+        .proximamente{
+            background-color: rgb(5, 5, 5);
+            color: whitesmoke;
+            padding: 30px;
+            border-left: yellow;
+            border-right: yellow;
+            border-radius: 50px;
+            
+        }
+
+        .ultimo{
+
+            background-color: #0a0a0a;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: cursive;
+            border-radius: 15px;
+            size-adjust: 21;
+            font-size: 30px;
+
+        }
+
+        ul {
+            list-style-type: circle; /* Cambia las viñetas a cuadrados */
+            background-color: #1bf507; /* Un fondo gris claro para la lista */
+            padding: 30px; /* Espacio interno de la lista */
+            border-radius: 8px; /* Bordes redondeados */
+            
+        }
+
+        .seccion-intereses li {
+
+            color: rgb(255, 255, 255);
+            margin-bottom: 15px;
+            border-radius: 30px;
+            font-size: medium;
+        }
+
+        a {
+            color: #28a745; /* Un color verde para los enlaces */
+            text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+        }
+
+        a:hover { /* Este es un pseudo-clase para cuando el mouse está sobre el enlace */
+            text-decoration: underline; /* Vuelve a poner el subrayado al pasar el mouse */
+        }
+
+        img {
+            border: 3px solid #ddd; /* Un borde alrededor de la imagen */
+            border-radius: 5px; /* Bordes ligeramente redondeados */
+            display: block; /* La imagen se comporta como un bloque, ocupando su propia línea */
+            margin: 20px auto; /* Centra la imagen y le da margen superior/inferior */
+        }
+
+     
+
+    
