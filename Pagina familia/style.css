@@ -1,7 +1,7 @@
 body {
             font-family: Arial, sans-serif; /* Cambia la fuente de todo el cuerpo */
-            background-color: #24b11f; /* Cambia el color de fondo */
-            color: #333; /* Cambia el color del texto general */
+            background-color: #1d28c7; /* Cambia el color de fondo */
+            color: #dd1d1d; /* Cambia el color del texto general */
             margin: 20px; /* Añade un margen alrededor del cuerpo */
         }
 
@@ -20,7 +20,7 @@ body {
             border: 1px solid rgb(19, 26, 18) ;
             text-align: center;
         }
-        .h3{
+        h3 {
             text-align: center;
             border: 2px solid white;
             border-radius: 5px ;
