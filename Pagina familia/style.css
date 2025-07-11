@@ -1,100 +1,159 @@
 body {
-            font-family: Arial, sans-serif; /* Cambia la fuente de todo el cuerpo */
-            background-color: #1d28c7; /* Cambia el color de fondo */
-            color: #dd1d1d; /* Cambia el color del texto general */
-            margin: 20px; /* Añade un margen alrededor del cuerpo */
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro para toda la página */
+    color: #333;
+    margin: 0; /* Sin margen en el body para que el nav ocupe todo el ancho */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #28a745; /* Verde para el nav bar de Nacional */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+.menu { /* Nuestro contenedor Flexbox para el menú */
+    display: flex; /* ¡Lo convierte en un contenedor flex! */
+    gap: 20px; /* Distribuye los ítems uniformemente con espacio entre ellos */
+    align-items: center; /* Alinea los ítems verticalmente al centro */
+    list-style: none; /* Quita las viñetas de la lista */
+    padding: 0; /* Quita el padding predeterminado de la lista */
+    margin: 0; /* Quita el margen predeterminado de la lista */
+    max-width: 1200px; /* Limita el ancho máximo del menú */
+    margin: 0 auto; /* Centra el menú dentro del nav si hay espacio */
+}
+
+.menu li a { /* Estilos para los enlaces dentro de los elementos de la lista del menú */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace para que sea más fácil hacer clic */
+    display: block; /* Para que el padding funcione en todo el área del enlace */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.menu li a:hover {
+    background-color: #218838; /* Un verde más oscuro al pasar el mouse */
+    border-radius: 5px;
+}
+
+
+#titulo-principal {
+    color: #008000; /* Un verde vibrante para el título de Nacional */
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Una fuente más impactante */
+    font-size: 3.5em; /* Tamaño grande */
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra de texto */
+}
+
+h2 {
+    color: #ff1e00; /* Color rojo */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff1e00; /* Línea debajo */
+    padding-bottom: 10px;
+}
+
+h3 { /* Estilo general para todos los h3 */
+    color: #0056b3; /* Un azul para los subtítulos de las fases */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0056b3;
+    padding-left: 10px;
+}
+
+p {
+    line-height: 1.7; /* Más espacio entre líneas */
+    margin-bottom: 18px;
+    color: #444; /* Un gris oscuro para el texto normal */
+}
+
+.parrafo-introduccion {
+    background-color: #e6ffe6; /* Verde muy claro */
+    padding: 18px;
+    border-left: 5px solid #008000; /* Borde verde fuerte */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* .proximamente y .ultimo se pueden estilizar así si los quieres diferentes */
+.proximamente {
+    color: #000000;
+    /* Puedes añadir estilos específicos si quieres diferenciarlos */
+}
+
+.ultimo {
+    /* Puedes añadir estilos específicos si quieres diferenciarlos */
+    font-weight: bold;
+}
+
+
+/* Estilos para la lista de partidos (seccion-intereses ahora) */
+.seccion-intereses {
+    list-style-type: none; /* Quita viñetas por defecto */
+    background-color: #f0f8f0; /* Fondo verde muy claro para la lista */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c8e6c9; /* Borde suave */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion-intereses li {
+    color: #2e7d32; /* Un verde más oscuro para el texto de la lista */
+    margin-bottom: 10px; /* Espacio entre cada ítem de la lista */
+    padding-left: 10px;
+    position: relative; /* Para el círculo personalizado */
+}
+
+.seccion-intereses li:last-child {
+    margin-bottom: 0; /* No hay margen inferior en el último elemento */
+}
+
+/* Pseudo-elemento para añadir un círculo personalizado */
+.seccion-intereses li::before {
+    content: "●"; /* Un círculo */
+    color: #008000; /* Color del círculo */
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 5px; /* Ajusta la posición vertical del círculo */
+}
+
+
+img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 30px auto;
+    border: 5px solid #28a745; /* Borde verde para la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para la imagen */
+}
+
+/* Estilos para el enlace de la página web del club */
+a[href="https://atlnacional.com.co/"] { /* Selector de atributo para un enlace específico */
+    color: #0056b3; /* Color azul */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a[href="https://atlnacional.com.co/"]:hover {
+    background-color: #0056b3;
+    color: white;
+}
 
         
-    #titulo-principal {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-decoration: underline;
-        font-size: 48px;
-        color: #ffffff; /* Un color azul oscuro para el encabezado principal */
-        text-align: center; /* Centra el texto */
-        border-radius: 10px ;
-    }
-
-        h2 {
-            color: #000000; /* Un azul más claro para el subtítulo */
-            border: 1px solid rgb(19, 26, 18) ;
-            text-align: center;
-        }
-        h3 {
-            text-align: center;
-            border: 2px solid white;
-            border-radius: 5px ;
-            border-color: rgb(255, 255, 255);
-        }
-
-        p {
-            line-height: 1.6; /* Aumenta el espacio entre líneas para mejor lectura */
-            margin-bottom: 15px; /* Espacio debajo de cada párrafo */
-            color: rgb(13, 13, 14);
-        }
-
-        .parrafo-introduccion   {
-
-            background-color: rgb(255, 255, 255);
-            padding: 15px;
-            border-left: 4px solid rgb(31, 235, 12);
-            border-radius: 8px;
-        }
-
-        .proximamente{
-            background-color: rgb(5, 5, 5);
-            color: whitesmoke;
-            padding: 30px;
-            border-left: yellow;
-            border-right: yellow;
-            border-radius: 50px;
-            
-        }
-
-        .ultimo{
-
-            background-color: #0a0a0a;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-family: cursive;
-            border-radius: 15px;
-            size-adjust: 21;
-            font-size: 30px;
-
-        }
-
-        ul {
-            list-style-type: circle; /* Cambia las viñetas a cuadrados */
-            background-color: #1bf507; /* Un fondo gris claro para la lista */
-            padding: 30px; /* Espacio interno de la lista */
-            border-radius: 8px; /* Bordes redondeados */
-            
-        }
-
-        .seccion-intereses li {
-
-            color: rgb(255, 255, 255);
-            margin-bottom: 15px;
-            border-radius: 30px;
-            font-size: medium;
-        }
-
-        a {
-            color: #28a745; /* Un color verde para los enlaces */
-            text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
-        }
-
-        a:hover { /* Este es un pseudo-clase para cuando el mouse está sobre el enlace */
-            text-decoration: underline; /* Vuelve a poner el subrayado al pasar el mouse */
-        }
-
-        img {
-            border: 3px solid #ddd; /* Un borde alrededor de la imagen */
-            border-radius: 5px; /* Bordes ligeramente redondeados */
-            display: block; /* La imagen se comporta como un bloque, ocupando su propia línea */
-            margin: 20px auto; /* Centra la imagen y le da margen superior/inferior */
-        }
 
      
 
